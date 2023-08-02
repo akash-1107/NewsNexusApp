@@ -16,7 +16,7 @@ const News = (props) => {
   } 
 
   const loadNewsItems = async () => {
-    let response = await fetch(`http://localhost:5000/api/auth/newsData`, {
+    let response = await fetch(`https://mernnewsnexus.onrender.com/api/auth/newsData`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ const News = (props) => {
 
 
   const fetchMoreData = async () => {
-    let response = await fetch(`http://localhost:5000/api/auth/newsData`, {
+    let response = await fetch(`https://mernnewsnexus.onrender.com/api/auth/newsData`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
